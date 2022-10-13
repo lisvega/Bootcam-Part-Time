@@ -65,10 +65,10 @@ const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 Muestra en consola el último personaje del array
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
 
-//TODAVIA NO
+
 1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
-// TODAVIA NO
+
 1.6 Elimina el segundo elemento del array y muestra el array por consola.
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
