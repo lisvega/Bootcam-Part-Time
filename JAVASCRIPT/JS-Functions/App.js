@@ -168,6 +168,7 @@ function removeDuplicates(things) {
 let newList = removeDuplicates(duplicates);
 console.log(newList);
 
+/*otra forma de hacerlo
 
 function removeDuplicates(list) {
     let unicos = [];
@@ -179,6 +180,55 @@ function removeDuplicates(list) {
     console.log(unicos)
 }
 
-removeDuplicates(duplicates)
+removeDuplicates(duplicates)*/
+
+
+//**Iteración #7: Buscador de nombres**
+
+/*Crea una función que reciba por parámetro un array y el valor que desea comprobar
+que existe dentro de dicho array - comprueba si existe el elemento, en caso que 
+existan nos devuelve un true y la posición de dicho elemento y por la contra un false.
+ Puedes usar este array para probar tu función:*/
+const nameFinder = [
+    'Peter',
+    'Steve',
+    'Tony',
+    'Natasha',
+    'Clint',
+    'Logan',
+    'Xabier',
+    'Bruce',
+    'Peggy',
+    'Jessica',
+    'Marc'
+];
+
+const finderName = (heroes, hero) => {
+    let NewList = heroes.indexOf(hero);
+    if (NewList === -1) {
+        return false;
+    } else {
+        return true, NewList;
+    }
+};
+
+let heroesList = finderName(nameFinder, "Peggy");
+console.log(heroesList);
+
+let heroesList1 = finderName(nameFinder, "Batman");
+console.log(heroesList1);
+
+const finderName1 = (hola, chau) => {
+    let hello = "";
+    for (let i = 0; i < hola.length; i++) {
+        if (hola[i] === chau) {
+            hello = i;
+        }
+    }
+    return hello;
+};
+let nombres = finderName1(nameFinder, "Steve");
+console.log(nombres);
+
 
 
